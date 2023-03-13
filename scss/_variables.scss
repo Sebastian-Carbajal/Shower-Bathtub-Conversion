@@ -1,0 +1,42 @@
+/*-- Fonts --*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+/*-- Color --*/
+$blue: #0044FF;
+
+/*-- Mixins --*/
+
+@mixin grid($grid-rows) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: $grid-rows;
+    grid-template-areas: "menu" "main" "footer";
+    grid-gap: 20px;
+}
+
+@mixin justify ($j-content) {
+	display: flex;
+	justify-content: $j-content;
+}
+
+@mixin flexItems ($f-col,$a-items) {
+	display: flex;
+	flex-direction: $f-col;
+	align-items: $a-items;
+}
+
+@mixin d-footer ($fd,$jc,$ai) {
+	display: flex;
+	flex-direction: $fd;
+	justify-content: $jc;
+	align-items: $ai;
+}
+
+@mixin flex ($wrap,$direction,$items) {
+	display: flex;
+	flex-wrap: $wrap;
+	flex-direction: $direction;
+	align-items: $items;
+}
+
+

@@ -1,0 +1,204 @@
+/*-- Fonts --*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+/*-- Color --*/
+/*-- Mixins --*/
+* {
+  margin: 0;
+  padding: 0; }
+
+.navbar .menu {
+  display: flex;
+  justify-content: space-between; }
+  .navbar .menu .navbar-brand {
+    display: flex;
+    justify-content: center; }
+    @media (min-width: 660px) {
+      .navbar .menu .navbar-brand {
+        display: flex;
+        justify-content: flex-start; } }
+    @media (min-width: 720px) {
+      .navbar .menu .navbar-brand {
+        display: flex;
+        justify-content: space-between; } }
+
+.navbar-nav .nav-link {
+  width: 98%;
+  padding: 10px 20px;
+  margin: 5px;
+  color: #0044FF;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  transition: 1s; }
+  .navbar-nav .nav-link:hover {
+    width: 98%;
+    color: #f4f5f6;
+    background-color: #0044FF; }
+
+.logo {
+  width: 40%; }
+  @media (min-width: 598px) {
+    .logo {
+      width: 30%; } }
+  @media (min-width: 992px) {
+    .logo {
+      width: 25%; } }
+
+@media (min-width: 992px) {
+  #navbarNav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.5%; } }
+
+#first-dropdown, #second-dropdown {
+  margin-left: 2%; }
+
+/*-- Main section --*/
+#main {
+  background-color: white; }
+  #main .carousel {
+    display: flex; }
+    #main .carousel .carouselImg {
+      width: 50%; }
+
+/*-- About Us section --*/
+.card-group {
+  width: 90%;
+  margin-bottom: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .card-group {
+      flex-direction: row; } }
+
+.card-1, .card-2, .card-3 {
+  margin: 5% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .card-1, .card-2, .card-3 {
+      margin: 0 3%; } }
+
+@media (min-width: 768px) {
+  .card-1 {
+    border-left-style: none; } }
+
+.cardImg {
+  width: 40%;
+  margin-top: 10%; }
+
+/*-- Insert walk-thru kit products cards --*/
+.product-container h3 {
+  color: #0044FF;
+  background-color: aliceblue;
+  font-family: 'Lato', sans-serif;
+  text-align: center; }
+
+#do-it-yourself {
+  color: #0044FF;
+  background-color: aliceblue;
+  font-family: 'Lato', sans-serif;
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-direction: row; } }
+
+.col {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly; }
+  @media (min-width: 375px) {
+    .col {
+      width: 96%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+
+.w-3 {
+  border-radius: 10%; }
+  .w-3 img {
+    border-radius: 50%; }
+
+.bg-img {
+  background-color: #72c8f1; }
+
+@media (min-width: 660px) {
+  .card-three {
+    margin-left: 2%; } }
+
+@media (min-width: 768px) {
+  .card-three {
+    margin-left: 0%; } }
+
+#btn {
+  padding: .375rem .75rem;
+  color: #fff;
+  background: #0a46a8;
+  border: 1px solid transparent;
+  border-color: #0d6efd;
+  border-radius: .25rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer; }
+  #btn:hover {
+    background: linear-gradient(200deg, #0da8cd 0%, #00d4ff 30%, white 90%);
+    color: #0a46a8;
+    border: 1px solid transparent;
+    cursor: pointer; }
+
+/*-- Insert walk-thru products cards --*/
+h2 {
+  color: #0044FF;
+  font-family: 'Lato', sans-serif;
+  text-align: center; }
+
+.cont-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 375px) {
+    .cont-product {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+  @media (min-width: 598px) {
+    .cont-product {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; } }
+
+.w-2 {
+  width: 95%;
+  background-color: rgba(114, 200, 241, 0.5);
+  border-radius: 5%; }
+  @media (min-width: 598px) {
+    .w-2 {
+      width: 46%; } }
+
+.card-title, .card-text {
+  color: #0044FF;
+  font-family: 'Lato', sans-serif; }
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  color: white;
+  background-color: rgba(0, 0, 128, 0.9);
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem; }
+
+.phrase {
+  margin: 0 11px;
+  font-family: 'Lato', sans-serif;
+  text-align: center; }

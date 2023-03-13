@@ -1,0 +1,62 @@
+.navbar {
+    .menu {
+        @include justify (space-between);
+
+        .navbar-brand {
+            @include justify (center);
+
+            @media (min-width: 660px) {
+                @include justify (flex-start);
+            }
+
+            @media (min-width: 720px) {
+                @include justify (space-between);
+            }
+        }
+    }
+} 
+
+.navbar-nav {
+    .nav-link {
+        width: 98%;
+        padding: 10px 20px;
+        margin: 5px;
+        color: $blue;
+        position: relative;
+        overflow: hidden;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        transition: 1s;
+        &:hover {
+            width: 98%;
+            color: #f4f5f6;
+            background-color: $blue;               
+        }
+    }
+}
+
+.logo {
+    width: 40%;
+
+    @media (min-width: 598px) {
+        width: 30%;
+    }
+
+    @media (min-width: 992px) {
+        width: 25%;
+    }
+}
+
+#navbarNav {
+    @media (min-width: 992px) {
+        @include justify (flex-end);
+        margin-right: 1.5%;
+    }
+}
+
+#first-dropdown, #second-dropdown {
+    margin-left: 2%
+}
+
+
+

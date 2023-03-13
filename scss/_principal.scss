@@ -1,0 +1,158 @@
+   /*-- Main section --*/
+
+    #main {
+        background-color: white;
+        .carousel {
+            display: flex;
+            .carouselImg {
+                width: 50%;
+            }
+        }
+    }
+    
+    /*-- About Us section --*/
+    
+    .card-group {
+        width: 90%;
+        margin-bottom: 3%;
+        @include flex (wrap,column,center);
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+    
+    .card-1, .card-2, .card-3 {
+        margin: 5% 0;
+        @include flexItems (column,center);
+
+        @media (min-width: 768px) {
+            margin: 0 3%;
+        }
+    }
+
+    .card-1 {
+        @media (min-width: 768px) {
+            border-left-style: none;
+        }
+    }
+    
+    .cardImg {
+        width: 30%;
+        margin-top: 10%;
+    }
+      
+    /*-- Insert walk-thru kit products cards --*/
+    
+    .product-container {
+        h3 {
+            color: $blue;
+            background-color: aliceblue;
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+        }
+    }
+
+    #do-it-yourself {
+        color: $blue;
+        background-color: aliceblue;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    }
+    
+    .card-container {
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .col {
+        width: 100%;
+        @include justify (space-evenly);
+        
+        @media (min-width: 375px) {
+            width: 96%;
+            @include flexItems (column,center);
+
+        }
+    }
+    
+    .w-3 {
+        border-radius: 10%;
+        img {
+            border-radius: 50%;
+        }
+    }
+    
+    .bg-img {
+        background-color: rgba($color: #72c8f1, $alpha: 1.0);
+    }
+    
+    .card-three {
+        @media (min-width: 660px) {
+            margin-left: 2%;
+        }
+
+        @media (min-width: 768px) {
+            margin-left: 0%;
+        }
+    }
+
+    #btn {
+        padding: .375rem .75rem;
+        color: #fff; 
+        background: #0a46a8;
+        border: 1px solid transparent; 
+        border-color: #0d6efd;
+        border-radius: .25rem; 
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5;
+        cursor: pointer;
+        &:hover{
+            background: linear-gradient(200deg, rgba(13,168,205,1) 0%, rgba(0,212,255,1) 30%, rgba(255,255,255,1) 90%);
+            color: #0a46a8;
+            border: 1px solid transparent;
+            cursor: pointer; 
+        }
+    }
+    
+    /*-- Insert walk-thru products cards --*/
+    
+    h2 {
+        color: $blue;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    }
+    
+    .cont-product {
+        @include flexItems (column,center);
+        
+        @media (min-width: 375px) {
+        @include flexItems (column,center);    
+
+        }
+        
+        @media (min-width: 598px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+    
+    .w-2 {
+        width: 95%;
+        background-color: rgba($color: #72C8F1, $alpha: 0.5);
+        border-radius: 5%;
+        
+        @media (min-width: 598px) {
+            width: 46%;
+        }
+    }
+
+    .card-title, .card-text {
+        color: $blue;
+        font-family: 'Lato', sans-serif;
+    }
